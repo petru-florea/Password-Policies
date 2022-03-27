@@ -1,1 +1,1 @@
-# Password-Policies
+# Password Policies
