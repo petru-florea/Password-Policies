@@ -5,7 +5,7 @@
 
 ### Quick summary
 
-This is a password policies library. These password policies are configured by the user, and then each password sent by the user is verified using these password policies. The rulues are:
+This is a password policies library. These password policies are configured by the user, and then each password sent by the user is verified using these password policies. The rules are:
   + **Length** - this restriction can specify the minimum length or the minimum and maximum length of a password.
   + **Class** - the restriction specifies how many different character classes the password must have; the classes are: lowercase, uppercase, number, and other characters.
   + **Must Include** - password must include at least one character in the specified class.
