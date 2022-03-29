@@ -29,3 +29,47 @@ On the following lines, up to the EOF, there is one password per line, which wil
 ### Output
 
 For each verified password, **OK** will be displayed if the password follows **ALL** specified rules, or **NOK** if there is at least one rule that is not followed.
+
+### Examples
+
+Input
+```
+4
+length 6
+include 0
+include A
+repetition 2
+PimpMyPassword
+HoldMyB33r
+OnceUponAtimeinKansas
+1234
+```
+
+Output
+```
+NOK
+OK
+NOK
+NOK
+```
+-----------------------
+
+Input
+```
+3
+length 6 12
+class 3
+consecutive 3
+PimpMyPassword
+HoldMyB33r
+OnceUponAtimeinKansas
+1234
+```
+
+Output
+```
+NOK
+OK
+NOK
+NOK
+```
