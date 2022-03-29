@@ -19,5 +19,13 @@ A positive integer **n**, unknown large, representing the number of rules to be 
   + *length <min_length>* - password must be **min_length** characters (inclusive); **0 < min_length**
   + *length <min_length> <max_length>* - password must be between **min_length** and **max_length** characters (inclusive); **0 < min_length <= max_length**
   + *class <min_class_count>* - password must have at least **min_class_count** different types of characters (lowercase, uppercase, number, and other characters); **0 < min_class_count < 5**
-  + *include <class>* - password must include at least one character of the specified class; class can be **a, A, 0 or $**, characters denoting the desired class
-  + *ninclude <class>* - the password must not include any characters from the specified class; class follows the same rules as above
+  + *include < class >* - password must include at least one character of the specified class; class can be **a, A, 0 or $**, characters denoting the desired class
+  + *ninclude < class >* - the password must not include any characters from the specified class; class follows the same rules as above
+  + *repetition <max_count>* - the same character can be repeated in consecutive positions **max_count** times; **0 < max_count**
+  + *consecutive <max_count>* - password can have **max_count** consecutive characters in sequence; **0 < max_count**
+
+On the following lines, up to the EOF, there is one password per line, which will be checked according to the specified rules.
+
+### Output
+
+For each verified password, **OK** will be displayed if the password follows **ALL** specified rules, or **NOK** if there is at least one rule that is not followed.
